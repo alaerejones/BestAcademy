@@ -287,4 +287,49 @@ section[tabindex="-1"]:focus { outline: none; }
 .logo-tile {padding: 6px 12px; border-radius: var(--radius-sm); display: inline-flex; }
 .logo-tile img { height: 36px; width: auto; }
 @media print { .header, .footer, .progress, .actions { display: none !important; } }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .progress { display: none; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .progress { display: none; } }/* Mobile hero layout */
+@media (max-width: 61.99rem) {
+
+  .hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding-block: var(--s6) var(--s8);
+    background-image: none;
+  }
+
+  /* Hero image becomes a background */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(
+        rgba(247, 247, 243, 0.78),
+        rgba(247, 247, 243, 0.88)
+      ),
+      url("/images/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+
+  .hero__grid {
+    position: relative;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Hide the separate image collage on mobile */
+  .collage {
+    display: none;
+  }
+
+  /* Hide application status inside the hero on mobile */
+  .hero .status {
+    display: none;
+  }
+}
+
+
