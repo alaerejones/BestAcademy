@@ -58,8 +58,9 @@ export default async function Home() {
       </section>
 
       <section id="about" tabIndex={-1} className="section" data-spy="about">
-        <div className="container split split--media">
-          <figure className="photo frame frame--tall"><Image src="/images/training-discussion.jpeg" alt="A participant speaking into a microphone during a group session while others listen" fill sizes="(min-width: 62rem) 40vw, 100vw" style={{ objectPosition: "35% 40%" }} /></figure>
+        {/* <div className="container split split--media"> */}
+        <div>
+          {/* <figure className="photo frame frame--tall"><Image src="/images/training-discussion.jpeg" alt="A participant speaking into a microphone during a group session while others listen" fill sizes="(min-width: 62rem) 40vw, 100vw" style={{ objectPosition: "35% 40%" }} /></figure> */}
           <div>
             <Chapter n="01" label="Why this exists" />
             <h2 data-reveal>A strong mission is not enough.</h2>
