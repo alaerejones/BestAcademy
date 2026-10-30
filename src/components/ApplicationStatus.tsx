@@ -4,8 +4,8 @@ import { resolveApplication, type SettingsForStatus } from "@/lib/status";
 export type StatusSettings = (SettingsForStatus & { interestListUrl?: string | null }) | null;
 
 const COPY = {
-  open: { icon: "●", label: "Applications open", body: "Registration for the next cohort is open. Register and pay securely on this website." },
-  closed: { icon: "■", label: "Cohort 1 application closed", body: "The current window has closed. The next one will be announced here." },
+  open: { icon: "●", label: "Application is on", body: "Registration for the next cohort is open. Register and pay securely on this website." },
+  closed: { icon: "■", label: "Application closed", body: "The next one will be announced here, join the waitlist to get notified." },
   coming_soon: { icon: "◆", label: "Applications opening soon", body: "The next cohort is being prepared." },
 } as const;
 

@@ -9,7 +9,7 @@ export const siteSettings = defineType({
     defineField({ name: "organisationName", title: "Confirmed organisation name", type: "string", description: "Shown in the footer as 'A programme by ...'. Leave empty until confirmed." }),
     defineField({
       name: "applicationStatus",
-      title: "Application status",
+      title: "Join the waitlist",
       type: "string",
       description: "Controls the whole site. If this is empty or invalid, the site shows 'closed'.",
       options: { list: [{ title: "Open", value: "open" }, { title: "Closed", value: "closed" }, { title: "Coming soon", value: "coming_soon" }], layout: "radio" },
