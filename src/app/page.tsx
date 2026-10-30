@@ -47,7 +47,7 @@ export default async function Home() {
             </div>
           </div>
           <div className="collage" aria-label="Programme at a glance">
-            <div className="collage__main frame"><Image src="/images/workshop-facilitator.jpeg" alt="A facilitator in a blue blazer speaking to seated participants in a meeting room" fill priority sizes="(min-width: 62rem) 42vw, 100vw" /></div>
+            <div className="collage__main frame"><Image src="/images/background.jpeg" alt="A facilitator in a blue blazer speaking to seated participants in a meeting room" fill priority sizes="(min-width: 62rem) 42vw, 100vw" /></div>
             <div className="collage__small frame"><Image src="/images/workshop-table.jpeg" alt="Participants gathered around a table, reading and taking notes together" fill sizes="(min-width: 62rem) 18vw, 40vw" /></div>
             <aside className="panel on-navy">
               <p className="panel__big">8 weeks</p>
