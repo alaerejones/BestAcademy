@@ -43,7 +43,7 @@ export default async function Home() {
             <p className="lead" data-reveal>An 8-week practical programme for NGO founders and leaders who want stronger organisations, better funding readiness and systems that support long-term impact.</p>
             <div className="actions" data-reveal>
               {open && (v.external ? <a className="btn btn--primary" href={v.href} rel="noopener noreferrer">Register now</a> : <Link className="btn btn--primary" href={v.href}>Register now</Link>)}
-              <ScrollLink id="programme" className={open ? "btn btn--ghost" : "btn btn--primary"}>Explore the programme</ScrollLink>
+              <ScrollLink id="programme" className={open ? "btn btn--ghost" : "btn btn--primary"}>Join the waitlist</ScrollLink>
             </div>
           </div>
           <div className="collage" aria-label="Programme at a glance">
